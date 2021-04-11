@@ -1,8 +1,8 @@
 export interface Car{
-     carId :number;
-     brandName :string;
-     colorName :string;
-     modelYear :number;
-     dailyPrice :number;
-     description :string;
+    carId :number;
+    brandId :number;
+    colorId :string;
+    modelYear :number;
+    dailyPrice :number;
+    description :string;
 }
