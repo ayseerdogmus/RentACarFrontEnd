@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CarDetailDto } from 'src/app/models/carDetailDto';
 import { CarImage } from 'src/app/models/carImage';
@@ -17,7 +18,8 @@ export class CarDetailComponent implements OnInit {
 
   constructor(private carService:CarService,
     private activatedRoute:ActivatedRoute,
-     private carImageService:CarImageService
+     private carImageService:CarImageService,
+     private sanitizer: DomSanitizer
     
     ) { }
 

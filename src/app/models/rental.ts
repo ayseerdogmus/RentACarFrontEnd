@@ -1,12 +1,12 @@
 
 export interface Rental  {
         rentalId :number;
-        FirstName :string;
-        LastName :string;
-        Email :string;
-        CompanyName:string; 
-        RentDate :Date;
-        ReturnDate :Date;
-        ModelYear :number;
-        BrandName :string
+        firstName :string;
+        lastName :string;
+        email :string;
+        companyName:string; 
+        rentDate :Date;
+        returnDate :Date;
+        modelYear :number;
+        brandName :string
 }

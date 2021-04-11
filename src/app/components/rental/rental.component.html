@@ -1,1 +1,28 @@
-<p>rental works!</p>
+
+  <table class="table table-striped">
+    <thead>
+       <tr>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Email</th>
+        <th>Şirket</th>
+        <th>Model</th>
+        <th>Model Yılı</th>        
+        <th>Kiralama Tarihi</th>
+        <th>Bırakma Tarihi</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rental of rentals">
+            <td>{{rental.firstName}}</td>
+            <td>{{rental.lastName}}</td>
+            <td>{{rental.email}}</td>
+            <td>{{rental.companyName}}</td>
+            <td>{{rental.brandName}}</td>
+            <td>{{rental.modelYear}}</td>
+            <td>{{rental.rentDate}}</td>
+            <td>{{rental.returnDate}}</td>
+            
+        </tr>
+    </tbody>   
+  </table>

@@ -1,6 +1,6 @@
 <tr *ngFor="let car of cars">
     <div  *ngFor="let carImage of carImages" class="card" style="width: fullwidth;">
-      <img src="{{carImage.imagePath}}" class="card-img-top" alt="...">
+      <img src="sanitizer.bypassSecurityTrustResourceUrl({{carImage.imagePath}})" class="card-img-top" alt="...">
       <div class="card-body" >
         <h5 class="card-title">{{car.brandName}} {{car.description}}</h5>
         <p class="card-text">RentalCars ayrıcalığı ile kiralayın!</p>
